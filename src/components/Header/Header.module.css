@@ -1,6 +1,8 @@
 .header {
     background-color: #E67E22;
     padding: 10px 20px;
+    z-index: 1000;
+    position: relative;
 }
 
 .number {
