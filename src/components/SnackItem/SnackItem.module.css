@@ -46,17 +46,16 @@
   justify-content: space-between;
 }
 
-/* .priceAndButtonContainer {
-  align-items: flex-end;
-  justify-content: space-between;
-} */
-
 .description {
   color: #fff;
   width: 80%;
 }
 
 @media (max-width: 768px) {
+  .snack {
+    user-select: none;
+  }
+
   .infosContainer {
     gap: 8px;
   }
