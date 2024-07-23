@@ -47,6 +47,7 @@
 
 .priceAndButtonContainer {
   align-items: flex-end;
+  justify-content: space-between;
 }
 
 .description {
@@ -57,5 +58,15 @@
 @media (max-width: 768px) {
   .img {
     display: none;
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .title {
+    font-size: 20px;
+    margin-bottom: 20px;
   }
 }

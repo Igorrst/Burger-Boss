@@ -8,7 +8,7 @@ export default function Menu() {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
-        <img src={Logo} alt="Logo Burguer Boss" />
+        <img className={styles.logo} src={Logo} alt="Logo Burguer Boss" />
         <h2 className={styles.title}>Lanches</h2>
         <ul className={styles.menu}>
           {snacks.map(({ name, description, image, price }) => (
