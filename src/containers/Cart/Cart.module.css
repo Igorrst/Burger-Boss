@@ -28,7 +28,7 @@
 
 .cartSidebar {
   position: fixed;
-  top: 38px;
+  top: 0;
   right: -300px;
   width: 300px;
   height: 100%;
@@ -36,7 +36,7 @@
   padding: 20px;
   box-sizing: border-box;
   color: white;
-  z-index: 500;
+  z-index: 1;
   transition: right 0.3s ease-in-out;
 }
 

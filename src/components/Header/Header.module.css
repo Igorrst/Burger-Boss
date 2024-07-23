@@ -1,10 +1,11 @@
 .header {
-    background-color: #E67E22;
-    padding: 10px 20px;
-    z-index: 1000;
-    position: relative;
+  background-color: #e67e22;
+  padding: 10px 20px;
+  z-index: 1000;
+  position: relative;
+  z-index: 0;
 }
 
 .number {
-    color:white;
+  color: white;
 }
