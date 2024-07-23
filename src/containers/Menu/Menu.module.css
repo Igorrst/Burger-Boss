@@ -20,11 +20,22 @@
 .menu {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 40px;
+  margin-top: 24px;
 }
 
 @media (max-width: 1024px) {
   .container {
     width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    height: 120px;
+  }
+
+  .title {
+    font-size: 32px;
   }
 }
