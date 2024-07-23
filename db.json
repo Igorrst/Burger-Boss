@@ -1,0 +1,34 @@
+{
+  "snacks": [
+    {
+      "name": "Aristocrat's Choice",
+      "description": "blend de carnes nobres, queijo brie, prosciutto italiano, rúcula fresca, molho de trufas negras, pão brioche artesanal.",
+      "price": "49,00",
+      "image": "https://cdn.discordapp.com/attachments/730973277467705406/1264388370512216074/Aristocrats-Choice.jpg?ex=669fab2e&is=669e59ae&hm=e862897d2e17651e9945857b488bb6db25c0c31b8d369e149001e037b9e2cbd2&"
+    },
+    {
+      "name": "Euphoria Burguer",
+      "description": "blend de carnes premium, queijo cheddar envelhecido, bacon crocante, alface americana, tomate maduro, picles caseiros, molho especial picante, pão de brioche.",
+      "price": "28,00",
+      "image": "https://cdn.discordapp.com/attachments/730973277467705406/1264388370931519488/Euphoria-Burger.jpg?ex=669fab2e&is=669e59ae&hm=57e87bf1b0923d32feb7abdad4fe8518d1a8e9d84eefbd550e0944ff02b1c613&"
+    },
+    {
+      "name": "Majestic Bite",
+      "description": "blend de carnes selecionadas, queijo gouda defumado, cogumelos salteados, cebolas caramelizadas, rúcula fresca, aioli de ervas finas, pão ciabatta artesanal.",
+      "price": "31,00",
+      "image": "https://cdn.discordapp.com/attachments/730973277467705406/1264388371313328238/Majestic-Bite.jpg?ex=669fab2e&is=669e59ae&hm=d15dd43f8d45e14db1b5aa1f693560ad744f230b04d0435762d2c5c8de8834a8&"
+    },
+    {
+      "name": "Exquisite Bite",
+      "description": "blend de carnes premium, queijo camembert, figos caramelizados, rúcula fresca, cebola roxa em conserva, mel trufado, pão brioche artesanal.",
+      "price": "44,00",
+      "image": "https://cdn.discordapp.com/attachments/730973277467705406/1264388403420725320/Exquisite-Bite.jpg?ex=669fab36&is=669e59b6&hm=1f5f807ca97a10f567c047a1ba60a3c96387ef5b7cfcff705b572c8682f2c2e4&"
+    },
+    {
+      "name": "Royal Classic",
+      "description": "blend de carnes suculentas, queijo cheddar envelhecido, bacon crocante, alface americana, tomate maduro, picles, molho especial de mostarda e maionese, pão de brioche.",
+      "price": "55,00",
+      "image": "https://cdn.discordapp.com/attachments/730973277467705406/1264388404494204929/Royal-Classic.jpg?ex=669fab36&is=669e59b6&hm=3513d4c3980caefcabdef97c1f2b938326f5d98944c69ae231398a120629e948&"
+    }
+  ]
+}
