@@ -27,6 +27,8 @@
   border-radius: 8px;
   cursor: pointer;
   width: 150px;
+  height: 40px;
+  text-wrap: nowrap;
   transition: 0.5s;
 }
 
