@@ -6,7 +6,9 @@
 }
 
 .img {
-  height: 170px;
+  height: 180px;
+  max-width: 230px;
+  width: 100%;
   border-radius: 8px;
 }
 
