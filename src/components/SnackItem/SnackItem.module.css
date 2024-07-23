@@ -3,6 +3,7 @@
   justify-content: space-between;
   gap: 16px;
   width: 100%;
+  transition: 0.5s;
 }
 
 .img {
@@ -15,7 +16,6 @@
 .title {
   font-family: "Irish Grover";
   color: #f1c40f;
-  margin-bottom: 40px;
 }
 
 .button {
@@ -36,26 +36,31 @@
 
 .infosContainer {
   display: flex;
-  gap: 20px;
-}
-
-.nameAndDescriptionContainer,
-.priceAndButtonContainer {
-  display: flex;
   flex-direction: column;
+  gap: 50px;
 }
 
-.priceAndButtonContainer {
-  align-items: flex-end;
+.nameAndPriceContainer,
+.descriptionAndButtonContainer {
+  display: flex;
   justify-content: space-between;
 }
 
+/* .priceAndButtonContainer {
+  align-items: flex-end;
+  justify-content: space-between;
+} */
+
 .description {
   color: #fff;
-  width: 100%;
+  width: 80%;
 }
 
 @media (max-width: 768px) {
+  .infosContainer {
+    gap: 8px;
+  }
+
   .img {
     display: none;
   }
@@ -63,10 +68,21 @@
   .description {
     font-size: 14px;
     line-height: 18px;
+    width: 100%;
   }
 
   .title {
     font-size: 20px;
-    margin-bottom: 20px;
+  }
+
+  .button {
+    display: none;
+  }
+
+  .snack:hover {
+    background-color: rgba(230, 126, 34, 0.3);
+    padding: 3px;
+    border-radius: 4px;
+    cursor: pointer;
   }
 }
