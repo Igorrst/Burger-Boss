@@ -15,7 +15,7 @@ const Cart = () => {
         <img src={cartIcon} alt="Carrinho de Compras" className={styles.cartIcon} />
       </button>
       <div className={`${styles.cartSidebar} ${isOpen ? styles.open : ''}`}>
-        <h2>Carrinho de Compras</h2>
+        <h2>Pedidos</h2>
         <div className={styles.cartSidebarContent}>
           {}
         </div>

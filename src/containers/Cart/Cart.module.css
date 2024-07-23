@@ -46,6 +46,9 @@
 
 .cartSidebar h2 {
   margin-bottom: 20px;
+  margin-left: 80px;
+  margin-top: 30px;
+  font-family: "Irish Grover";
 }
 
 @media (max-width: 768px) {
