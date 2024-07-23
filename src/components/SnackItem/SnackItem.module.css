@@ -1,0 +1,59 @@
+.snack {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+}
+
+.img {
+  height: 170px;
+  border-radius: 8px;
+}
+
+.title {
+  font-family: "Irish Grover";
+  color: #f1c40f;
+  margin-bottom: 40px;
+}
+
+.button {
+  padding: 12px 8px;
+  background-color: #28c74f;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 150px;
+  transition: 0.5s;
+}
+
+.button:hover {
+  background-color: #23a042;
+}
+
+.infosContainer {
+  display: flex;
+  gap: 20px;
+}
+
+.nameAndDescriptionContainer,
+.priceAndButtonContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.priceAndButtonContainer {
+  align-items: flex-end;
+}
+
+.description {
+  color: #fff;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .img {
+    display: none;
+  }
+}
