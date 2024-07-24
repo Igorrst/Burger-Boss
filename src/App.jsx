@@ -1,6 +1,7 @@
-import Header from './components/Header'
+import Header from './components/Header';
 import Cart from './containers/Cart/Cart';
-import Menu from "./containers/Menu";
+import Menu from './containers/Menu';
+import Footer from './components/Footer';
 
 const App = () => {
     return (
@@ -8,6 +9,7 @@ const App = () => {
             <Header />
             <Cart />
             <Menu />
+            <Footer />
             {}
         </div>
     )
