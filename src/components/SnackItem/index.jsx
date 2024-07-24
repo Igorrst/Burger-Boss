@@ -5,10 +5,17 @@ import styles from "./SnackItem.module.css";
 export default function SnackItem({ name, imgUrl, description, price }) {
   const cart = useCart((state) => state.cart);
   const addToCart = useCart((state) => state.addProduct);
+
   console.log(cart);
 
   return (
-    <li className={styles.snack}>
+    <li
+      onClick={() =>
+        window.innerWidth <= 768 &&
+        addToCart({ name, imgUrl, description, price })
+      }
+      className={styles.snack}
+    >
       <img className={styles.img} src={imgUrl} alt={name} />
       <div className={styles.infosContainer}>
         <div className={styles.nameAndPriceContainer}>
