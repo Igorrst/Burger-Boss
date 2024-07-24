@@ -14,6 +14,7 @@ const Cart = () => {
       <button className={styles.cartButton} onClick={toggleCart}>
         <img src={cartIcon} alt="Carrinho de Compras" className={styles.cartIcon} />
       </button>
+      <div className={`${styles.overlay} ${isOpen ? styles.show : ''}`} onClick={toggleCart}></div>
       <div className={`${styles.cartSidebar} ${isOpen ? styles.open : ''}`}>
         <h2>Pedidos</h2>
         <div className={styles.cartSidebarContent}>
