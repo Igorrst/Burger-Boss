@@ -18,6 +18,24 @@ const useCart = create((set) => ({
 
       return { cart: [...state.cart, { ...product, quantity: 1 }] };
     }),
+  increaseQuantity: (name) =>
+    set((state) => {
+      return {
+        cart: state.cart.map((p) =>
+          p.name === name ? { ...p, quantity: p.quantity + 1 } : p
+        ),
+      };
+    }),
+  decreaseQuantity: (name) =>
+    set((state) => {
+      return {
+        cart: state.cart
+          .map((p) =>
+            p.name === name ? { ...p, quantity: p.quantity - 1 } : p
+          )
+          .filter((product) => product.quantity > 0),
+      };
+    }),
 }));
 
 export default useCart;
