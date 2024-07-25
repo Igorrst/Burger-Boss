@@ -3,8 +3,27 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  list-style: none;
 }
 
 body {
   background-color: #3d1810;
+}
+
+.button--add {
+  padding: 12px 8px;
+  background-color: #28c74f;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 150px;
+  height: 40px;
+  text-wrap: nowrap;
+  transition: 0.5s;
+}
+
+.button--add:hover {
+  background-color: #23a042;
 }
