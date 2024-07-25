@@ -1,17 +1,45 @@
 .drinkListContainer {
-    padding: 20px;
-    overflow-x: auto;
-  }
-  
-  .drinkList {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 10px;
-  }
-  
-  .title {
-    font-family: "Irish Grover";
-    font-size: 24px;
-    color: #fff;
-    margin-bottom: 10px;
-  }
+  overflow-x: hidden;
+  margin-bottom: 20px;
+}
+
+.drinkListWrapper {
+  display: flex;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  padding-bottom: 2px;
+}
+
+.drinkList {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  width: fit-content;
+}
+
+.title {
+  font-family: "Irish Grover";
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 10px;
+  margin-left: 47%;
+}
+
+.drinkListWrapper::-webkit-scrollbar {
+  height: 10px;
+}
+
+.drinkListWrapper::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.drinkListWrapper::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.drinkListWrapper::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

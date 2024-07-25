@@ -8,10 +8,12 @@ const DrinkList = () => {
   return (
     <div className={styles.drinkListContainer}>
       <h2 className={styles.title}>Bebidas</h2>
+      <div className={styles.drinkListWrapper}>
       <div className={styles.drinkList}>
         {drinks.map(drink => (
-          <DrinkItem key={drink.name} name={drink.name} description={drink.description} image={drink.image} />
+          <DrinkItem key={drink.name} name={drink.name} description={drink.description} image={drink.image} price={drink.price} />
         ))}
+        </div>
       </div>
     </div>
   );

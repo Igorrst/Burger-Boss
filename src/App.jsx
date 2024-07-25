@@ -8,9 +8,11 @@ const App = () => {
     return (
         <div>
             <Header />
+            <div className='container'>
             <Cart />
             <Menu />
             <DrinkList />
+            </div>
             <Footer />
             {}
         </div>
