@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./Cart.module.css";
 import cartIcon from "../../assets/Cart.png";
 import CartItem from "../../components/CartItem";
@@ -28,39 +28,45 @@ const Cart = () => {
     }).format(value);
   }
 
+  useEffect(() => {
+    setIsOpen(true);
+  }, [cart]);
+
   return (
-    <>
-      <button className={styles.cartButton} onClick={toggleCart}>
-        <img
-          src={cartIcon}
-          alt="Carrinho de Compras"
-          className={styles.cartIcon}
-        />
-      </button>
-      <div
-        className={`${styles.overlay} ${isOpen ? styles.show : ""}`}
-        onClick={toggleCart}
-      ></div>
-      <div className={`${styles.cartSidebar} ${isOpen ? styles.open : ""}`}>
-        <h2>Pedidos</h2>
-        <ul className={styles.cartSidebarContent}>
-          {cart.map(({ quantity, name, price }) => (
-            <CartItem
-              key={name}
-              quantity={quantity}
-              name={name}
-              price={price}
-            />
-          ))}
-          {cart.length > 0 && (
-            <div className={styles.finalizeOrderContainer}>
-              <h3>Total: {formatCurrency(getTotalPrice())}</h3>
-              <button className="button--add">Finalizar pedido</button>
-            </div>
-          )}
-        </ul>
-      </div>
-    </>
+    cart.length && (
+      <>
+        <button className={styles.cartButton} onClick={toggleCart}>
+          <img
+            src={cartIcon}
+            alt="Carrinho de Compras"
+            className={styles.cartIcon}
+          />
+        </button>
+        <div
+          className={`${styles.overlay} ${isOpen ? styles.show : ""}`}
+          onClick={toggleCart}
+        ></div>
+        <div className={`${styles.cartSidebar} ${isOpen ? styles.open : ""}`}>
+          <h2>Pedidos</h2>
+          <ul className={styles.cartSidebarContent}>
+            {cart.map(({ quantity, name, price }) => (
+              <CartItem
+                key={name}
+                quantity={quantity}
+                name={name}
+                price={price}
+              />
+            ))}
+            {cart.length > 0 && (
+              <div className={styles.finalizeOrderContainer}>
+                <h3>Total: {formatCurrency(getTotalPrice())}</h3>
+                <button className="button--add">Finalizar pedido</button>
+              </div>
+            )}
+          </ul>
+        </div>
+      </>
+    )
   );
 };
 
