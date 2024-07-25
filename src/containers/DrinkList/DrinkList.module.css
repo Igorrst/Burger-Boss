@@ -1,13 +1,14 @@
 .drinkListContainer {
   overflow-x: hidden;
-  margin-bottom: 20px;
+  margin-bottom: 100px;
+  margin-top: 70px;
 }
 
 .drinkListWrapper {
   display: flex;
   overflow-x: scroll;
   -webkit-overflow-scrolling: touch;
-  padding-bottom: 2px;
+  padding-bottom: 2px;  
 }
 
 .drinkList {
@@ -19,8 +20,8 @@
 
 .title {
   font-family: "Irish Grover";
-  font-size: 24px;
+  font-size: 30px;
   color: #fff;
   margin-bottom: 10px;
-  margin-left: 47%;
+  text-align: center;
 }

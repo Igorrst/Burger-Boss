@@ -11,7 +11,7 @@ const DrinkList = () => {
       <div className={styles.drinkListWrapper}>
       <div className={styles.drinkList}>
         {drinks.map(drink => (
-          <DrinkItem key={drink.name} name={drink.name} description={drink.description} image={drink.image} price={drink.price} />
+          <DrinkItem key={drink.name} name={drink.name} image={drink.image} price={drink.price} />
         ))}
         </div>
       </div>
