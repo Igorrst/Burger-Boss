@@ -6,6 +6,18 @@
   list-style: none;
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+}
+
 body {
   background-color: #3d1810;
 }

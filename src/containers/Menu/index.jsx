@@ -6,7 +6,6 @@ import SnackItem from "../../components/SnackItem";
 export default function Menu() {
   const snacks = snacksData.snacks;
   return (
-    <div className={styles.container}>
       <main className={styles.main}>
         <img className={styles.logo} src={Logo} alt="Logo Burguer Boss" />
         <h2 className={styles.title}>Lanches</h2>
@@ -22,6 +21,5 @@ export default function Menu() {
           ))}
         </ul>
       </main>
-    </div>
   );
 }
