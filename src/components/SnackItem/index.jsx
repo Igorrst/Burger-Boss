@@ -3,11 +3,7 @@ import styles from "./SnackItem.module.css";
 
 // eslint-disable-next-line react/prop-types
 export default function SnackItem({ name, imgUrl, description, price }) {
-  const cart = useCart((state) => state.cart);
   const addToCart = useCart((state) => state.addProduct);
-
-  console.log(cart);
-
   return (
     <li
       onClick={() =>
@@ -28,7 +24,7 @@ export default function SnackItem({ name, imgUrl, description, price }) {
             onClick={() => {
               addToCart({ name, imgUrl, description, price });
             }}
-            className={styles.button}
+            className="button--add"
           >
             Adicionar ao carrinho
           </button>

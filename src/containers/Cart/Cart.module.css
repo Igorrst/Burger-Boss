@@ -12,7 +12,7 @@
   justify-content: center;
   align-items: center;
   z-index: 999;
-  transition: background-color 0.3s, transform 0.3, box-shadow 0.3s;
+  transition: 0.3s;
 }
 
 .cartButton:hover {
@@ -29,13 +29,13 @@
 .cartSidebar {
   position: fixed;
   top: 0;
-  right: -300px;
-  width: 300px;
+  right: -400px;
+  width: 400px;
   height: 100%;
-  background-color: rgba(230, 126, 34, 0.7);
+  background-color: #3d1810;
   padding: 20px;
   box-sizing: border-box;
-  color: white;
+  color: #fff;
   z-index: 998;
   transition: right 0.3s ease-in-out;
 }
@@ -46,15 +46,24 @@
 
 .cartSidebar h2 {
   margin-bottom: 20px;
-  margin-left: 80px;
+  text-align: center;
   margin-top: 30px;
   font-family: "Irish Grover";
 }
 
+.finalizeOrderContainer {
+  text-align: end;
+  margin-top: 20px;
+
+  button {
+    margin-top: 20px;
+  }
+}
+
 @media (max-width: 768px) {
   .cartSidebar {
-    width: 250px;
-    right: -250px;
+    width: 80%;
+    right: -80%;
   }
 
   .cartSidebar.open {
@@ -71,11 +80,6 @@
   .cartIcon {
     width: 25px;
     height: 25px;
-  }
-
-  .cartSidebar {
-    width: 200px;
-    height: -200px;
   }
 
   .cartSidebar.open {

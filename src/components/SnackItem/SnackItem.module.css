@@ -82,7 +82,6 @@
 
   .snack:hover {
     background-color: rgba(230, 126, 34, 0.3);
-    padding: 3px;
     border-radius: 4px;
     cursor: pointer;
   }
