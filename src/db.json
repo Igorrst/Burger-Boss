@@ -30,5 +30,43 @@
       "price": "55,00",
       "image": "https://cdn.pixabay.com/photo/2022/07/15/18/18/burger-7323697_640.jpg"
     }
+  ],
+  "drinks": [
+    {
+      "name": "Strawberry Delight",
+      "description": "Uma deliciosa mistura de morango fresco com uma base cítrica, decorado com um morango. Uma escolha perfeita para quem adora sabores doces e frutados.",
+      "price": "22,00",
+      "image": "https://cdn.pixabay.com/photo/2017/05/24/01/32/bar-2339180_640.jpg"
+    },
+    {
+      "name": "Pineapple Lime Delight",
+      "description": "Um refrescante coquetel tropical com abacaxi fresco e limão, decorado com fatias de abacaxi. Ideal para dias quentes de verão.",
+      "price": "26,00",
+      "image": "https://cdn.pixabay.com/photo/2019/02/26/15/21/drink-4022299_640.jpg"
+    },
+    {
+      "name": "Classic Lime Martini",
+      "description": "Um martini clássico com toque de limão, servido em uma taça elegante com um toque de casca de limão. Ideal para amantes de bebidas refinadas.",
+      "price": "16,00",
+      "image": "https://cdn.pixabay.com/photo/2020/01/21/11/36/caipirinha-4782694_640.jpg"
+    },
+    {
+      "name": "Orange Sunset",
+      "description": "Um coquetel cítrico com suco de laranja fresco e uma pitada de amargor, servido em um copo de vidro clássico. Perfeito para relaxar ao final do dia.",
+      "price": "24,00",
+      "image": "https://media.istockphoto.com/id/1286685532/pt/foto/old-fashioned-cocktail-with-an-orange-twist.jpg?s=612x612&w=0&k=20&c=4ODYmnmIk9Kv4pUNjxZKtmwe_bTn_Onb5BnjfB-9BPA="
+    },
+    {
+      "name": "Mint Cooler",
+      "description": "Uma refrescante mistura de hortelã e limão com bastante gelo. Este coquetel é ideal para quem busca uma bebida leve e revigorante.",
+      "price": "25,00",
+      "image": "https://media.istockphoto.com/id/1369244502/pt/foto/mai-tai-trendy-alcoholic-cocktail-with-rum-liqueur-syrup-lime-juice-mint-and-crushed-ice-dark.jpg?s=612x612&w=0&k=20&c=GBpPaKRrqFoClWs8KwCQjgLl8ESD2Q4rxG0ip_Dsyhk="
+    },
+    {
+      "name": "Blue Lagoon",
+      "description": "Um vibrante coquetel azul com uma base cítrica, perfeito para dar um toque de cor à sua noite. Servido com gelo e uma fatia de limão.",
+      "price": "27,00",
+      "image": "https://media.istockphoto.com/id/1330405634/pt/foto/young-waitress-with-protective-mask-prepares-a-gin-and-tonic-cocktail-in-a-nightclub.jpg?s=612x612&w=0&k=20&c=DI8TMqchNdMlTXgwz-MeIGIDZrN-i_sRg7c0UFCynr0="
+    }
   ]
 }
