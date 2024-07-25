@@ -1,0 +1,17 @@
+.drinkListContainer {
+    padding: 20px;
+    overflow-x: auto;
+  }
+  
+  .drinkList {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+  
+  .title {
+    font-family: "Irish Grover";
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
