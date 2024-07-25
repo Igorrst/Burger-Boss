@@ -29,12 +29,16 @@ const Cart = () => {
   }
 
   useEffect(() => {
-    setIsOpen(true);
+    if (cart.length > 0) {
+      setIsOpen(true);
+    } else {
+      setIsOpen(false);
+    }
   }, [cart]);
 
   return (
-    cart.length && (
-      <>
+    <>
+      {cart.length > 0 && (
         <button className={styles.cartButton} onClick={toggleCart}>
           <img
             src={cartIcon}
@@ -42,31 +46,31 @@ const Cart = () => {
             className={styles.cartIcon}
           />
         </button>
-        <div
-          className={`${styles.overlay} ${isOpen ? styles.show : ""}`}
-          onClick={toggleCart}
-        ></div>
-        <div className={`${styles.cartSidebar} ${isOpen ? styles.open : ""}`}>
-          <h2>Pedidos</h2>
-          <ul className={styles.cartSidebarContent}>
-            {cart.map(({ quantity, name, price }) => (
-              <CartItem
-                key={name}
-                quantity={quantity}
-                name={name}
-                price={price}
-              />
-            ))}
-            {cart.length > 0 && (
-              <div className={styles.finalizeOrderContainer}>
-                <h3>Total: {formatCurrency(getTotalPrice())}</h3>
-                <button className="button--add">Finalizar pedido</button>
-              </div>
-            )}
-          </ul>
-        </div>
-      </>
-    )
+      )}
+      <div
+        className={`${styles.overlay} ${isOpen ? styles.show : ""}`}
+        onClick={toggleCart}
+      ></div>
+      <div className={`${styles.cartSidebar} ${isOpen ? styles.open : ""}`}>
+        <h2>Pedidos</h2>
+        <ul className={styles.cartSidebarContent}>
+          {cart.map(({ quantity, name, price }) => (
+            <CartItem
+              key={name}
+              quantity={quantity}
+              name={name}
+              price={price}
+            />
+          ))}
+          {cart.length > 0 && (
+            <div className={styles.finalizeOrderContainer}>
+              <h3>Total: {formatCurrency(getTotalPrice())}</h3>
+              <button className="button--add">Finalizar pedido</button>
+            </div>
+          )}
+        </ul>
+      </div>
+    </>
   );
 };
 
