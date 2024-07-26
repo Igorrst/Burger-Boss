@@ -7,7 +7,7 @@ const Footer = () => {
                 <p>
                   &copy; Desenvolvido por: 
                   <a href="https://github.com/KaykyDion" target="_blank" rel="noopener noreferrer">KaykyDion</a> & 
-                  <a href="https://github.com/SkyNot" target="_blank" rel="noopener noreferrer">SkyNot</a>
+                  <a href="https://virtual-business-card-ten.vercel.app/" target="_blank" rel="noopener noreferrer">IgorRian</a>
                 </p>
             </div>
         </footer>
